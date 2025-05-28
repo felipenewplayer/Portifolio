@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <title>Portifólio</title>
 </head>
 
@@ -21,12 +21,24 @@
                     <p>Engenheiro de Software e<br> Analista de Segurança de Redes/Cibersegurança.</p>
                 </div>
                 <div class="header-right">
+                    <button class="button" id="button" type="button">
+                        <img src="./images/buttonImage.png" alt="imagem-do-botão">
+                    </button>
                     <img src="./images/profileImage.png" alt="foto de perfil">
+
+                    <div id="teste" class="teste desativado">
+                        <button id="fechar-menu" class="fechar">X</button>
+                        <ul>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#projetos">Projetos</a></li>
+                        </ul>
+                    </div>
                 </div>
+
             </header>
         </section>
         <section class="sobre" id="sobre">
-           <a href="#sobre">Sobre</a>
+            <a href="#sobre">Sobre</a>
             <p>Apaixonado por tecnologia venho cada vez mais caindo de cabeça na área, aprendendo e me desenvolvendo
                 cada vez mais, atualmente estudando Análise de Desenvolvimento de Sistemas, cursos na Alura e na Cisco.
             </p>
@@ -56,16 +68,16 @@
                     <h4>Castilho's Bar</h4>
                     <p>Tecnologias utilizadas:</p>
                     <ul>
-                        <li>Frontend: React 18 (SPA) com Vite.</li>
+                        <li>Linguagem: Java.</li>
                         <li> Estilo: Tailwind CSS.
                         </li>
                         <li> Backend: Spring Boot 3.x com Java 21.
                         </li>
-                        <li> Banco de Dados: PostgreSQL(via Docker).
+                        <li> Banco de Dados: Mysql
                         </li>
-                        <li> Segurança: Configurações de CORS.
+                        <li> Ferramenta: Docker Compose
                         </li>
-                        <li> Deploy: Render e Docker.
+                        <li> Controle de Versão: Git, GitHub.
                         </li>
                     </ul>
                     <p>Repositório: <a href="https://castilhosbar.netlify.app/">Castilho's Bar</a></p>
@@ -80,33 +92,26 @@
             </div>
             <div class="erp">
                 <div>
-                        <video width="640" height="360" controls>
-                            <source src="./videos/SiteHamburguer.mp4" type="
-                    video/mp4" />
-                            Seu navegador não suporta vídeos HTML5.
-                        </video>
-                    </div>
-                    <div>
-                        <h4>ERP</h4>
-                        <p>Tecnologias utilizadas:</p>
-                        <ul>
-                            <li>Linguagem: Java.</li>
-                            <li> Estilo: Tailwind CSS.
-                            </li>
-                            <li> Backend: Spring Boot 3.x com Java 21.
-                            </li>
-                            <li> Banco de Dados: Mysql
-                            </li>
-                            <li> Ferramenta: Docker Compose
-                            </li>
-                            <li> Controle de Versão: Git, GitHub.
-                            </li>
-                        </ul>
-                        <p>Repositório: <a href="https://github.com/felipenewplayer/mini-erp">Castilho's Bar</a></p>
-                    </div>
+                    <img src="./images/erp_img.png" alt="imagem-do-erp">
+                </div>
+                <div>
+                    <h4>ERP</h4>
+                    <p>Tecnologias utilizadas:</p>
+                    <ul>
+                        <li>Tecnologias utilizadas</li>
+                        <li>React 18</li>
+                        <li>Bootstrap 5</li>
+                        <li>Vite</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Consumo de API REST (via fetch)</li>
+                        <li>Integração com backend Java Spring Boot</li>
+                    </ul>
+                    <p>Repositório: <a href="https://github.com/felipenewplayer/mini-erp">Castilho's Bar</a></p>
+                </div>
             </div>
         </section>
     </main>
 </body>
-    <script src="javaScript.js"></script>
+<script src="javaScript.js"></script>
+
 </html>

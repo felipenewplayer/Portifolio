@@ -2,8 +2,8 @@
     --primary_font: font-family: "Bree Serif", serif;
     --secondary-font: 'Courier New', monospace;
 
-    --primary_color: #3654a0e2;
-    --second_color: #451350;
+    --primary_color: #2a65fde2;
+    --second_color: #39fd43;
     --third_color: #1e1648;
 }
 
@@ -65,9 +65,62 @@ header {
     right: 350px;
 }
 
-.header-right img:hover {
-    transform: rotate(5deg);
-    transition: transform 0.5s ease-in-out;
+.header-right button img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 500px;
+    right: 100px;
+    cursor: pointer;
+}
+.header-right button.hidden {
+    display: none; /* ou use visibilidade + pointer-events se quiser animar */
+}
+.teste {
+    position: absolute;
+    bottom: 320px;
+    right: 100px;
+    background-color: #fefefe;
+    height: 200px;
+    width: 300px;
+    padding-top: 20px;
+    transition: opacity 1.0s ease, transform 1.0s ease;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateY(-20px); /* opcional, para um efeito de subir */
+}
+
+.teste.ativado {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.teste.ativado a,
+.teste.ativado li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+}
+
+.teste .fechar {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--third_color);
+}
+
+.teste.desativado {
+    transition: opacity 1.0s ease, transform 1.0s ease;
+    pointer-events: none;
+    
 }
 
 .slide-in {
@@ -174,15 +227,14 @@ header {
     justify-content: space-around;
     align-items: center;
 }
-
+.erp img{
+    width: 700px;
+    height: 400px;
+}
 .erp h4 {
     color: var(--second_color);
     font-size: 40px;
 }
 .erp li{
     color: var(--second_color);
-}
-
-html {
-  scroll-behavior: smooth;
 }
