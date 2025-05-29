@@ -238,3 +238,84 @@ header {
 .erp li{
     color: var(--second_color);
 }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+        gap: 2rem;
+        background: #312764;
+        align-items: center;
+    }
+
+    .header-left h1 {
+        font-size: 40px;
+    }
+
+    .header-left p {
+        font-size: 22px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .header-right img {
+        position: static;
+        width: 180px;
+        margin: 0 auto;
+    }
+
+    .header-right button  {
+        opacity: 0;
+    }
+
+    .teste {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .div_site_hambuguer,
+    .erp {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 10px;
+
+    }
+
+    .erp img {
+        width: 100%;
+        max-width: 90vw;
+        height: 300px;
+    }
+
+    .div_site_hambuguer .video-burguer {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .sobre div {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sobre p,
+    .sobre a,
+    .projetos p,
+    .projetos a {
+        font-size: 20px;
+        padding: 0 1rem;
+    }
+
+    .sobre article h2 {
+        font-size: 30px;
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
