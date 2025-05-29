@@ -14,8 +14,8 @@ body {
     font-family: var(--primary_font);
     margin: 0;
     padding: 0;
-    background-color: var(--neutral_light); /* fundo claro e elegante */
-    color: var(--third_color); /* cor padrão dos textos */
+    background-color: var(--neutral_light);
+    color: var(--third_color); 
 }
 
 a {
@@ -33,7 +33,6 @@ header {
 }
 
 .header-left {
-    background-color: #3D155F;
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -80,7 +79,6 @@ header {
 
 .header-right button.hidden {
     display: none;
-    /* ou use visibilidade + pointer-events se quiser animar */
 }
 
 .menu {
