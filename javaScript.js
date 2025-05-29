@@ -1,5 +1,5 @@
 const button = document.getElementById("button");
-const menu = document.getElementById("teste");
+const menu = document.getElementById("menu");
 const botaoFechar = document.getElementById("fechar-menu");
 button.addEventListener('click', () =>{
     const button = document.querySelector("button");
