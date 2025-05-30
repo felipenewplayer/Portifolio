@@ -337,20 +337,11 @@ p {
         height: auto;
     }
 
-    .sobre p,
-    .sobre a,
-    .projetos p,
-    .projetos a {
-        font-size: 16.2px;
-        padding: 0 1rem;
-    }
-
     .sobre article h2 {
-        font-size: 30px;
+        font-size: 20px;
         text-align: center;
         padding-left: 0;
-        margin-bottom: 20px;
-
+        margin-bottom: 1px;
     }
 }
 
@@ -397,5 +388,10 @@ p {
     .projetos {
         flex-direction: column;
         display: flex;
-    }   
+    }
+
+    .projetos h4 {
+        font-size: 30px;
+
+    }
 }
