@@ -31,3 +31,7 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.slide-in').forEach(element =>{
     observer.observe(element);
 }); 
+
+
+
+

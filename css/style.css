@@ -352,7 +352,7 @@ p {
     }
 }
 
-@media (max-width: 412px) {
+@media (min-width: 468px) {
     body{
         display: flex;
         flex-direction: column;
