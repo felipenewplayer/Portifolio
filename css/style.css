@@ -2,12 +2,12 @@
     --primary_font: "Bree Serif", serif;
     --secondary-font: 'Courier New', monospace;
 
-    --primary_color: #1f2937;    
-    --second_color: #f97316;      
-    --third_color: #111827;       
+    --primary_color: #1f2937;
+    --second_color: #f97316;
+    --third_color: #111827;
 
-    --neutral_light: #f9fafb;     
-    --neutral_medium: #d1d5db;    
+    --neutral_light: #f9fafb;
+    --neutral_medium: #d1d5db;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--neutral_light);
-    color: var(--third_color); 
+    color: var(--third_color);
 }
 
 a {
@@ -160,13 +160,14 @@ header {
 
 .sobre a:hover {
     color: var(--neutral_medium);
-}   
+}
 
 .sobre p {
     padding-left: 50px;
     margin: 20px 0;
     font-size: 40px;
-    background-color: transparent; /* se quiser */
+    background-color: transparent;
+    /* se quiser */
     color: var(--third_color);
 }
 
@@ -177,7 +178,7 @@ header {
 
 .sobre article h2 {
     color: var(--second_color);
-    font-size: 40px;
+    font-size: 30px;
     padding-left: 50px;
 }
 
@@ -242,7 +243,7 @@ p {
 
 .div_site_hambuguer h4 {
     color: var(--primary_color);
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .erp {
@@ -271,7 +272,7 @@ p {
     color: var(--second_color);
 }
 
-@media (max-width: 768px )  {
+@media (max-width: 768px) {
     header {
         flex-direction: column;
         height: auto;
@@ -340,7 +341,7 @@ p {
     .sobre a,
     .projetos p,
     .projetos a {
-        font-size: 20px;
+        font-size: 16.2px;
         padding: 0 1rem;
     }
 
@@ -349,11 +350,14 @@ p {
         text-align: center;
         padding-left: 0;
         margin-bottom: 20px;
+
     }
 }
 
-@media (min-width: 468px) {
-    body{
+
+
+@media (max-width: 768px) {
+    body {
         display: flex;
         flex-direction: column;
     }
@@ -362,20 +366,36 @@ p {
         padding-left: 6px;
         align-items: center;
     }
-    .header-left h1, p{
-        padding-left: 6px;
+
+    .header-left h1,
+    p {
+        padding-left: 20px;
     }
+
 
     .sobre {
         display: flex;
         flex-direction: column;
-        height: auto;
+        margin-bottom: 20px;
     }
 
-    .projetos{
+
+    .sobre article h2 {
+        color: var(--second_color);
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    .sobre p,
+    .sobre a,
+    .projetos p,
+    .projetos a {
+        font-size: 12px;
+        padding: 0 1rem;
+    }
+
+    .projetos {
         flex-direction: column;
         display: flex;
-    }
-
-
+    }   
 }
